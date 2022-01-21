@@ -19,6 +19,7 @@ public class SortedStack<T extends Comparable<T>> {
     private Stack<T> stack = new Stack<>();
     private Stack<T> temp = new Stack<>();
 
+
     public void push(T elem) {
         if (stack.isEmpty()) {
             stack.push(elem);
@@ -35,5 +36,10 @@ public class SortedStack<T extends Comparable<T>> {
 
     public T pop() {
         return stack.pop();
+    }
+
+    public static void main(String[] args) {
+        Stack<Integer> s = new Stack<>();
+        s.iterator();
     }
 }
